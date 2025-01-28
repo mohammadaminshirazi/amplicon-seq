@@ -32,7 +32,7 @@ Shotgun sequencing is a method used to sequence long strands of DNA by randomly 
 
 ## Using  QIIME 2 for Analysis
 
-[QIIME 2]([https://github.com/your-chai2-repo-link](https://qiime2.org/)) is a powerful computational tool designed for the analysis of sequencing data. It provides robust pipelines for processing and interpreting both shotgun sequencing and 16S rRNA sequencing data. Key features include:
+[QIIME 2][https://github.com/your-chai2-repo-link](https://qiime2.org/) is a powerful computational tool designed for the analysis of sequencing data. It provides robust pipelines for processing and interpreting both shotgun sequencing and 16S rRNA sequencing data. Key features include:
 - **Data Preprocessing**: Quality control, trimming, and filtering of raw sequencing reads.
 - **Taxonomic Assignment**: Accurate classification of microbial species using reference databases.
 - **Functional Annotation**: Prediction of gene functions and metabolic pathways.
