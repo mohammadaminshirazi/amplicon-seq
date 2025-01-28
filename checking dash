@@ -1,0 +1,87 @@
+###################### ggplot ###################
+### 1st Step: Install Packages 
+
+install.packages("ggplot2")
+library(ggplot2)
+
+### 2nd Step: what is our data 
+
+?mpg
+
+### how to write the structure of code
+
+ggplot(data = mpg) +
+  geom_point(mapping = aes(y = hwy, x = displ))
+
+### how change the structure to more profassional
+
+ggplot(data = mpg) +
+  geom_point(mapping = aes(y = hwy, x = displ , color=class))
+
+###
+
+ggplot(data = mpg) +
+  geom_point(mapping = aes(y = hwy, x = displ , color = "red" ))
+
+###
+
+ggplot(data = mpg) +
+  geom_smooth(mapping = aes(y = hwy, x = displ ))
+
+###
+
+ggplot(data = mpg) +
+  geom_smooth(mapping = aes(y = hwy, x = displ, color=class ))
+
+###
+
+ggplot(data = mpg) +
+  geom_point(mapping = aes(y = hwy, x = displ , color = drv )) +
+  geom_smooth(mapping = aes(y = hwy, x = displ, color= drv, linetype= drv ))
+
+### heritage in R
+
+ggplot(data = mpg , mapping = aes(y = hwy, x = displ , color = drv)) +
+  geom_point() +
+  geom_smooth(mapping = aes(linetype= drv ))
+
+###
+
+df <- read.csv("C:/Users/M.A.Shirazi/OneDrive/Desktop/آمار شریفی زارچی/c5de246ccf295b0dd1f2437ac01050ba/R Workshop/2 - Data Visualization/Salaries.csv")
+
+ggplot(data = df) +
+  geom_point(mapping = aes(x= yrs.service , y= salary, color= salary > 100000))
+
+###
+
+
+ggplot(df) +
+  geom_point( aes(x= yrs.service ,y=salary, shape = sex , color=rank))
+
+###
+
+#new dataset
+?diamonds
+View(diamonds)
+
+###
+
+ggplot(diamonds) + geom_bar(aes(x = cut))
+
+###
+
+ggplot(diamonds) + stat_count(aes(x = cut))
+
+
+###
+
+
+df1 <- data.frame(cut = c("Fair", "Good" , "Very Good" , "Premium" , "Ideal"), count= c(100,150,200,130,400))
+
+ggplot(df1) + geom_bar(aes(x = cut , y= count), stat = "identity")
+
+###
+
+ggplot(df1) + geom_col(aes(x = cut,y=count))
+
+
