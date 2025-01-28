@@ -59,13 +59,7 @@ Shotgun sequencing is a method used to sequence long strands of DNA by randomly 
 
 ## Getting Started
 1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
 
-
-Install the required dependencies (e.g., CHAI 2, Python packages).
-
-Run the provided scripts to analyze your sequencing data.
 
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
